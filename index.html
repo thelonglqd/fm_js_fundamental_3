@@ -12,39 +12,40 @@
 
 <body>
   <main class="main">
-    <section class="user__filter">
-      <div class="user">
-        <div class="user__avatar">
-          <img src="images/image-jeremy.png" alt="">
+    <header class="control__card">
+      <div class="control-card__user">
+        <div class="user-avatar">
+          <img src="images/image-jeremy.png" alt="Jeremy Robson">
         </div>
-        <div class="user__information">
-          <p class="user__report">Report for</p>
-          <p class="user__fullname">Jeremy Robson</p>
+        <div class="user-information">
+          <span class="user-information__report">Report for</span>
+          <h1 class="user-information__name">Jeremy Robson</h1>
         </div>
       </div>
-      <nav class="filter">
-        <ul class="filter__list">
-          <li class="filter__item">
-            <a href="#">Daily</a>
+      <nav class="control-card__nav">
+        <ul class="filter-list">
+          <li>
+            <button class="btn btn--nav" type="button">Daily</button>
           </li>
-          <li class="filter__item">
-            <a href="#">Weekly</a>
+          <li>
+            <button class="btn btn--nav" type="button">Weekly</button>
           </li>
-          <li class="filter__item">
-            <a href="#">Monthly</a>
+          <li>
+            <button class="btn btn--nav" type="button">Monthly</button>
           </li>
         </ul>
       </nav>
-    </section>
+    </header>
+
     <section class="activities__card activities__card--work">
       <div class="activities__info">
         <div class="activities__info--top">
-          <p class="activities__title">Work</p>
-          <div class="activities__menu">
+          <h2 class="activities__title">Work</h2>
+          <button aria-label="more options" type="button" class="btn btn--more" class="activities__menu">
             <div class="activities__dot"></div>
             <div class="activities__dot"></div>
             <div class="activities__dot"></div>
-          </div>
+          </button>
         </div>
         <div class="activities__info--bottom">
           <p class="activities__current">32hrs</p>
@@ -56,12 +57,12 @@
     <section class="activities__card activities__card--play">
       <div class="activities__info">
         <div class="activities__info--top">
-          <p class="activities__title">Play</p>
-          <div class="activities__menu">
+          <h2 class="activities__title">Play</h2>
+          <button aria-label="more options" type="button" class="btn btn--more" class="activities__menu">
             <div class="activities__dot"></div>
             <div class="activities__dot"></div>
             <div class="activities__dot"></div>
-          </div>
+          </button>
         </div>
         <div class="activities__info--bottom">
           <p class="activities__current">10hrs</p>
@@ -73,12 +74,12 @@
     <section class="activities__card activities__card--study">
       <div class="activities__info">
         <div class="activities__info--top">
-          <p class="activities__title">Study</p>
-          <div class="activities__menu">
+          <h2 class="activities__title">Study</h2>
+          <button aria-label="more options" type="button" class="btn btn--more" class="activities__menu">
             <div class="activities__dot"></div>
             <div class="activities__dot"></div>
             <div class="activities__dot"></div>
-          </div>
+          </button>
         </div>
         <div class="activities__info--bottom">
           <p class="activities__current">4hrs</p>
@@ -90,12 +91,12 @@
     <section class="activities__card activities__card--exercise">
       <div class="activities__info">
         <div class="activities__info--top">
-          <p class="activities__title">Exercise</p>
-          <div class="activities__menu">
+          <h2 class="activities__title">Exercise</h2>
+          <button aria-label="more options" type="button" class="btn btn--more" class="activities__menu">
             <div class="activities__dot"></div>
             <div class="activities__dot"></div>
             <div class="activities__dot"></div>
-          </div>
+          </button>
         </div>
         <div class="activities__info--bottom">
           <p class="activities__current">4hrs</p>
@@ -107,12 +108,12 @@
     <section class="activities__card activities__card--social">
       <div class="activities__info">
         <div class="activities__info--top">
-          <p class="activities__title">Social</p>
-          <div class="activities__menu">
+          <h2 class="activities__title">Social</h2>
+          <button aria-label="more options" type="button" class="btn btn--more" class="activities__menu">
             <div class="activities__dot"></div>
             <div class="activities__dot"></div>
             <div class="activities__dot"></div>
-          </div>
+          </button>
         </div>
         <div class="activities__info--bottom">
           <p class="activities__current">5hrs</p>
@@ -124,12 +125,12 @@
     <section class="activities__card activities__card--selfcare">
       <div class="activities__info">
         <div class="activities__info--top">
-          <p class="activities__title">Self Care</p>
-          <div class="activities__menu">
+          <h2 class="activities__title">Self Care</h2>
+          <button aria-label="more options" type="button" class="btn btn--more" class="activities__menu">
             <div class="activities__dot"></div>
             <div class="activities__dot"></div>
             <div class="activities__dot"></div>
-          </div>
+          </button>
         </div>
         <div class="activities__info--bottom">
           <p class="activities__current">2hrs</p>
