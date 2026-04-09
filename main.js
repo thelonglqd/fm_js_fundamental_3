@@ -19,27 +19,26 @@ function renderCards(data, frame = 'daily') {
       `${cardContainerSelector} .activities__title`,
     )
 
-    if (cardTitle && cardTitle.innerText)
-      cardTitle.innerText = activity.title
+    if (cardTitle) cardTitle.textContent = activity.title
 
     const cardInfoCurrent = document.querySelector(
       `${cardContainerSelector} .activities__current`,
     )
 
-    if (cardInfoCurrent && cardInfoCurrent.innerText)
-      cardInfoCurrent.innerText = `${activity.timeframes[`${frame}`].current}hrs`
+    if (cardInfoCurrent)
+      cardInfoCurrent.textContent = `${activity.timeframes[`${frame}`].current}hrs`
 
     const cardInfoPrevious = document.querySelector(
       `${cardContainerSelector} .activities__previous`,
     )
 
-    if (cardInfoPrevious && cardInfoPrevious.innerText) {
+    if (cardInfoPrevious) {
       if (frame === 'daily') {
-        cardInfoPrevious.innerText = `Yesterday - ${activity.timeframes[`${frame}`].previous}hrs`
+        cardInfoPrevious.textContent = `Yesterday - ${activity.timeframes[`${frame}`].previous}hrs`
       } else if (frame === 'weekly') {
-        cardInfoPrevious.innerText = `Last week - ${activity.timeframes[`${frame}`].previous}hrs`
+        cardInfoPrevious.textContent = `Last week - ${activity.timeframes[`${frame}`].previous}hrs`
       } else if (frame === 'monthly') {
-        cardInfoPrevious.innerText = `Last monthly - ${activity.timeframes[`${frame}`].previous}hrs`
+        cardInfoPrevious.textContent = `Last monthly - ${activity.timeframes[`${frame}`].previous}hrs`
       }
     }
   })
@@ -54,7 +53,7 @@ function handleNavButtonClick(e) {
   currentActive?.classList?.remove('active')
   e.target.classList.add('active')
 
-  renderCards(activitiesData, e.target.name)
+  renderCards(activitiesData, e.currentTarget.name)
 }
 
 navButtons?.forEach(btn => {
