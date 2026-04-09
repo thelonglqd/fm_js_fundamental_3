@@ -63,7 +63,7 @@ navButtons?.forEach(btn => {
 
 const promiseData = new Promise(resolve => {
   setTimeout(() => {
-    resolve(fetch('/data.json'))
+    resolve(fetch('./data.json'))
   }, 1000)
 })
 
