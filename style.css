@@ -258,13 +258,13 @@ body {
 }
 .activities__info--top,
 .activities__info--bottom {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .activities__info--bottom {
-  position: relative;
   margin-block-start: 1rem;
   @media (min-width: 64em) {
     flex-direction: column;
