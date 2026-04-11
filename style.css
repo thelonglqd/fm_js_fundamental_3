@@ -326,7 +326,7 @@ body {
   background-size: 300% 300%;
   background-position: 100% 100%;
 
-  animation: shimmer 1.5s infinite linear;
+  animation: shimmer 1.5s infinite ease;
 }
 
 @keyframes shimmer {
